@@ -540,8 +540,6 @@ img {
     margin-bottom: 4px;
 
     color: #8E8F99;
-    background-color: transparent;
-    outline: transparent;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
@@ -552,6 +550,8 @@ img {
  }
 
  .form-input{
+    background-color: transparent;
+    outline: transparent;
     padding-left: 38px;
     border-radius: 4px;
     border: 1px solid rgba(46, 47, 66, 0.40);
@@ -560,6 +560,7 @@ img {
     outline: none;
 
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
 
  .form-input:focus{
@@ -573,8 +574,6 @@ img {
     transform: translateY(-50%);
 
     fill: rgba(46, 47, 66, 1);
-
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
 
  .form-input:focus + .form-icon{
@@ -594,9 +593,7 @@ img {
     resize: none;
     height: 120px;
     padding: 8px 16px;
- }
 
- .form-comment::placeholder{
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
