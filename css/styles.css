@@ -255,6 +255,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 112px;
     border-radius: 4px;
     border: 1px solid #8E8F99;
     background: #F4F4FD;
@@ -599,6 +600,10 @@ img {
  }
 
  .form-input{
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
     padding-left: 38px;
     border-radius: 4px;
     border: 1px solid rgba(46, 47, 66, 0.40);
@@ -660,6 +665,11 @@ img {
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8e8f99;
+ }
+
+ .privacy-label{
+    display: flex;
+    gap: 8px;
  }
 
 .checkbox-icon-span{
