@@ -517,7 +517,7 @@ img {
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
 
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1); ;
  }
 
  .modal-button:active,
@@ -559,8 +559,7 @@ img {
     height: 40px;
     outline: none;
 
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
  }
 
  .form-input:focus{
@@ -572,8 +571,9 @@ img {
     top: 50%;
     left: 16px;
     transform: translateY(-50%);
-
     fill: rgba(46, 47, 66, 1);
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
 
  .form-input:focus + .form-icon{
@@ -581,7 +581,7 @@ img {
  }
 
  .form-wrapper{
-    margin-bottom: 8px;
+    margin-bottom: 16px;
  }
 
  
@@ -600,6 +600,8 @@ img {
     color: rgba(46, 47, 66, 0.4);
     background-color: transparent;
     outline: transparent;
+
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
 
  .form-agreement{
@@ -608,6 +610,8 @@ img {
     color: rgba(142, 143, 153, 1);
     font-size: 12px;
     line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
  }
 
  .form-agreement-checkbox{
